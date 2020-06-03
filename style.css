@@ -123,6 +123,41 @@ hr{
     line-height: 1.5rem;
     width: 90%;
 }
+/* NUESTRA CARTA DE COMIDA*/
+#nuestro_menu{
+    background-color: #1f1f1f; 
+}
+#nuestro_menu .contenedor{
+    display: flex;
+    justify-content: center;
+}
+#nuestro_menu .imagen_menu{
+    width: 302px;
+    height: 285px;
+    background-image: url(img/cangrejo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#nuestro_menu .menu_texto{
+    width: 302px;
+    height: 285px;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding-top: 10%;
+}
+#nuestro_menu span{
+    color: #c39d63;
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-block;
+    padding-bottom: 1.35rem;
+}
+#nuestro_menu p{
+    display: inline-block;
+    padding-top: 1rem;
+}
+
 
 /*font-family: 'Montserrat', sans-serif;
 font-family: 'Oswald', sans-serif;
