@@ -157,7 +157,158 @@ hr{
     display: inline-block;
     padding-top: 1rem;
 }
+/*TESTIMONIALES*/
 
+#testimoniales{
+    text-align: center;
+    background: #f2f2f2;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+#testimoniales .titulo{
+    color: #bfbfbf;
+    letter-spacing: 2px;
+    font-weight: 700;
+    
+}
+#testimoniales hr{
+    display: inline-block;
+}
+#testimoniales h2{
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+.contenedor-testimoniales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+.testimonial{
+    width: 25%;
+    text-align: left;
+    line-height: 1.5rem;
+}
+.testimonial p{
+    width: 80%;
+}
+.testimonial .nombre{
+    font-weight: bold;
+    padding-top: 1rem;
+}
+.testimonial img{
+    width: 55%;
+}
+/*CONTACTO*/
+#contacto{
+    background-image: url(img/restaurant.jpg);
+    color: #ffff;
+    text-align: center;
+    padding: 90px 0px;
+    background-position: center top;
+    background-size: cover;
+}
+#contacto .contenedor{
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+#contacto .izquierda, #contacto .derecha{
+    background-color: #1f1f1f;
+    padding: 77px 20px;
+    
+}
+#contacto .izquierda{
+    width: 40%;
+    margin: 0px 57px 0px 52px;
+}
+#contacto .derecha{
+    width: 40%;
+}
+#contacto .izquierda{
+    margin-right: 40px;
+}
+#contacto ul{
+    border-bottom: 2px solid #c29062;
+    padding-bottom: 10px;
+}
+ul#tercero{
+    border-bottom: 0px;
+}
+#contacto ul li{
+    font-size: 1.5rem;
+}
+#contacto h2{
+    font-family: 'Varela', sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+    margin-bottom: 1.5rem;
+}
+#contacto ul li:nth-child(1){
+    font-weight: bold;
+    font-size: 1rem;
+}
+#contacto a{
+    color: #f1f1f1;
+    padding: .5rem;
+    background-color: #c39d63;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-top: 10px;
+}
+#contacto h3{
+    font-size: 23px;
+    font-weight: 100;
+    margin-top: 20px;
+    
+}
+#contacto .derecha p{
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+}
+#contacto .derecha a{
+    padding: 9px 12px;
+}
+#contacto h3 .news{
+    margin-top: 67px;
+    display: block;
+}
+input[type="text"]{
+    width: 75%;
+    border: 0;
+    background-color: #111111;
+    padding: 15px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #cdcdcd;
+}
+::placeholder{
+    color: #cdcdcd;
+}
+::-ms-input-placeholder{
+    color: #cdcdcd;
+}
+input[type="submit"]{
+    display: block;
+    width: 79%;
+    margin: auto;
+    border: 0;
+    background: #c29063;
+    color: #fff;
+    padding: 11px 0;
+    font-size: 1rem;
+}
+@media screen and (max-width: 800px){
+    nav{
+        position: absolute;
+        top: 93px;
+        left: 0;
+        background: #000;
+    }
+}
 
 /*font-family: 'Montserrat', sans-serif;
 font-family: 'Oswald', sans-serif;
