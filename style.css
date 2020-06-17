@@ -15,22 +15,52 @@ a{
     max-width: 1200px;
     margin: auto;
 }
-.menu{
-    background: white;
-    padding: 1em 1.5em;
-}
-.menu .contenedor{
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.contenedor .logo{
-    font-size: 1.5em;
-}
-nav li a{
-    padding: 1em 2em;
-    color: black;
-}
+    background: #fff;
+    
+
+  }
+  .brand-title{
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .navbar-links li{
+    list-style: none;
+  }
+  .navbar-links li a{
+    text-decoration: none;
+    color: #000;
+    padding: 1rem;
+    display: block;
+  }
+  .navbar-links li a:hover{
+    background-color: rgb(216, 216, 216);
+  }
+  .toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  .toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 10px;
+  }
+  
 /*INTRO*/
 #intro{
     position: relative; 
@@ -122,6 +152,9 @@ hr{
     color: #939393;
     line-height: 1.5rem;
     width: 90%;
+}
+#ourStory .derecha img{
+    width: 100%s;
 }
 /* NUESTRA CARTA DE COMIDA*/
 #nuestro_menu{
@@ -301,15 +334,109 @@ input[type="submit"]{
     padding: 11px 0;
     font-size: 1rem;
 }
-@media screen and (max-width: 800px){
+@media (max-width: 800px){
+    /*barra de navegacion*/
+    .toggle-button{
+      display: flex;
+    }
+    .navbar-links{
+      display: none;
+      width: 100%;
+    }
+    .navbar{
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      padding: .5rem;
+    }
+    .navbar-links ul{
+      flex-direction: column;
+      width: 100%;
+      text-align: left;
+    }
+    .navbar-links li a{
+      padding: .5rem;
+    }
+    .navbar-links.active{
+      display: flex;
+    }
+    .menu-icon{
+        display: block;
+    }
     nav{
         position: absolute;
-        top: 93px;
+        top: 12%;
         left: 0;
-        background: #000;
+        width: 100%;
+        background: #000000;
+        display: none;
     }
-}
-
+    nav ul li{
+        display: block;
+        margin: 8px 20px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+  /*INTRO*/
+  #intro h1 {
+    font-family: 'Varela', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    }
+    #intro p {
+        width: 90%;
+        text-align: left;
+    }
+    #ourStory .contenedor {
+        display: block;
+        justify-content: center;
+    }
+    #ourStory .izquierda{
+        margin-bottom: 1.5rem;
+    }
+    #ourStory .derecha img{
+        width: 95%;
+    }
+    #nuestro_menu .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #nuestro_menu .contenedor .izquierda{
+        margin-top: 2rem;
+    }
+    #nuestro_menu .contenedor .izquierda,
+    #nuestro_menu .contenedor .centro,
+    #nuestro_menu .contenedor .derecha{
+        margin-bottom: 2rem;
+    }
+    #testimoniales .titulo {
+        font-size: 2.5rem;
+    }
+    #testimoniales h2 {
+        font-size: 2rem;
+    }
+    .contenedor-testimoniales {
+        display: block;
+    }
+    .testimonial{
+        margin: auto;
+        width: 100%;
+    }
+    #contacto .contenedor {
+        display: block
+    }
+    #contacto .izquierda {
+        width: 100%;
+    }
+    #contacto .izquierda {
+        margin: 0px;
+        margin-bottom: 2rem;
+    }
+    #contacto .derecha {
+        width: 100%;
+    }
 /*font-family: 'Montserrat', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Proza Libre', sans-serif;
